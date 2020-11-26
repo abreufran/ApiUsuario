@@ -36,11 +36,11 @@ public class Usuario {
 	
 	public Usuario(int id, String name, String email, String password, List<Telefono> phones) {
 		super();
-		this.id = id;
-		this.name = name;
-		this.email = email;
-		this.password = password;
-		this.phones = phones;
+		this.setId(id);
+		this.setName(name);
+		this.setEmail(email);
+		this.setPassword(password);
+		this.setPhones(phones);
 	}
 	public int getId() {
 		return id;

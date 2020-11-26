@@ -57,7 +57,7 @@ public class UsuarioController {
 		@ApiResponse(code = 403, message = "No esta Autorizado para generar token JWT", response = HttpStatus.class),
 		@ApiResponse(code = 200, message = "Token JWT", response = HttpStatus.class)
 		})
-	public ResponseEntity<Map<String, String>> generarTokenJwt(@RequestBody SolicitudAutenticacion solicitudAutenticacion) throws Exception {
+	public ResponseEntity<Map<String, String>> generarTokenJwt(@RequestBody SolicitudAutenticacion solicitudAutenticacion) {
 		return usuarioService.generarToken(solicitudAutenticacion);
 	}
 }

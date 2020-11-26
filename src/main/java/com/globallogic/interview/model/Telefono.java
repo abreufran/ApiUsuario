@@ -19,11 +19,21 @@ public class Telefono {
 	
 	public Telefono(int id, String number, String citycode, String contrycode) {
 		super();
-		this.id = id;
-		this.number = number;
-		this.citycode = citycode;
-		this.contrycode = contrycode;
+		this.setId(id);
+		this.setNumber(number);
+		this.setCitycode(citycode);
+		this.setContrycode(contrycode);
 	}
+	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getNumber() {
 		return number;
 	}
